@@ -67,7 +67,10 @@ DEFAULT_REQUEST_HEADERS = {
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'comic.pipelines.ComicPipeline': 300,
+   'comic.pipelines.MyImagePipeline': 200,
 }
+
+IMAGES_STORE="./test/"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
